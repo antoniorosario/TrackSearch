@@ -1,0 +1,78 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.tracksearch.TrackSearchActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/track_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center">
+
+        <ProgressBar
+            android:id="@+id/loading_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="invisible"/>
+
+        <ImageView
+            android:id="@+id/search_icon"
+            android:layout_width="@dimen/width_search_icon"
+            android:layout_height="@dimen/height_search_icon"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_empty_search_image"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:id="@+id/search_title_text"
+            style="@style/TitleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/search_icon"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:paddingTop="@dimen/spacing_normal"
+            tools:text="@string/search_active_string_title"/>
+
+        <TextView
+            android:id="@+id/search_subtitle_text"
+            style="@style/SubtitleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/search_title_text"
+            android:layout_centerHorizontal="true"
+            android:paddingBottom="@dimen/spacing_normal"
+            android:paddingTop="@dimen/spacing_small"
+            tools:text="@string/search_active_state_string_subtitle"/>
+
+        <ImageButton
+            android:id="@+id/retry_query_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/search_subtitle_text"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_retry_query_button"
+            android:visibility="gone"/>
+    </RelativeLayout>
+</FrameLayout>

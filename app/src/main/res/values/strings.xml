@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Track Search</string>
+    <!--Search strings-->
+    <string name="search_active_string_title">Search the iTunes Library</string>
+    <string name="search_active_state_string_subtitle">Find your favorite music</string>
+    <string name="search">Search</string>
+    <string name="search_offline_title_text">You\'re offline</string>
+    <string name="search_offline_subtitle_text">Please connect to the internet and try again</string>
+    <string name="search_no_results_title_text">Your search returned no tracks</string>
+    <string name="search_hint">Search</string>
+    <string name="search_device_is_offline_title">Device is offline</string>
+    <string name="search_device_is_offline_subtitle">Make sure Wi-fi or cellular data is turned on.</string>
+    <string name="share_song_subject">I think you would love  this song!</string>
+    <string name="share_song_text">Check it out this song: %1$s by %2$s</string>
+    <string name="send_track">Send track via</string>
+    <string name="error_string">Error loading tracks from iTunes, please try again.</string>
+
+    <!--Lyrics strings-->
+
+    <string name="error_finding_lyrics">We were not able to find lyrics for %1$s by %2$s.</string>
+</resources>
